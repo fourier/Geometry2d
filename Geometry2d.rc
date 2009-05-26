@@ -1,0 +1,617 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\Geometry2d.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Geometry2d.ico"
+IDR_Geometry2dTYPE      ICON                    "res\\Geometry2dDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_NEW          BITMAP                  "res\\bitmap1.bmp"
+IDR_TRIANGLE            BITMAP                  "res\\toolbar1.bmp"
+IDR_OPTIONS             BITMAP                  "res\\bmp00001.bmp"
+IDR_BOUNDARY_BAR        BITMAP                  "res\\bmp00002.bmp"
+IDR_PRIMITIVES          BITMAP                  "res\\bmp00003.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TRIANGLE TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTON_NODE
+    BUTTON      ID_BUTTON_SEGMENT
+    BUTTON      ID_BUTTON_MARKER1
+    BUTTON      ID_BUTTON_MARKER2
+    BUTTON      ID_BUTTON_HOLE
+    BUTTON      ID_BUTTON_NODE_CHECK
+END
+
+IDR_OPTIONS TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTON_PROPERTIES
+    BUTTON      ID_BUTTON_TRIANGULATE
+    BUTTON      ID_BUTTON_NODE_OPTIONS
+END
+
+IDR_BOUNDARY_BAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTON_BOUNDARY_LINE
+    BUTTON      ID_BUTTON_BOUNDARY_CURVE
+END
+
+IDR_PRIMITIVES TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTON_LINE_PRIMITIVE
+    BUTTON      ID_BUTTON_CURVE_PRIMITIVE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Geometry2d...",        ID_APP_ABOUT
+    END
+END
+
+IDR_Geometry2dTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Geometry"
+    BEGIN
+        MENUITEM "Triangulate...",              ID_TRIANGULATE_CURRENT_VIEW
+        MENUITEM "Properties...",               ID_GEOMETRY_PROPERTIES
+        MENUITEM "Node options...",             ID_GEOMETRY_NODEOPTIONS
+        MENUITEM "Change SK",                   ID_GEOMETRY_CHANGESK
+        MENUITEM "Export to module",            ID_GEOMETRY_EXPORTTOMODULE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Geometry2d...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPERTIES_DLG DIALOGEX 0, 0, 135, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Window properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,42,127,50,14
+    EDITTEXT        IDC_SCALING_EDIT,43,19,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_SCALING_SPIN,"msctls_updown32",UDS_ARROWKEYS,83,
+                    19,9,14
+    LTEXT           "Select the scaling factor",IDC_STATIC_1,28,7,78,8
+    LTEXT           "Select the mode for drawing nodes",IDC_STATIC_2,11,47,
+                    112,8
+    COMBOBOX        IDC_NODE_DRAWING_MODES,11,60,112,58,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select boundary conditions",IDC_STATIC,24,79,87,8
+    COMBOBOX        IDC_COMBO_BOUNDARY_CONDITIONS,11,94,113,62,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About Geometry2d"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Geometry2d Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006 Bondarenko Oksana, BMSTU",IDC_STATIC,
+                    40,25,188,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_TRIANGULATE_OPTIONS_DLG DIALOGEX 0, 0, 205, 157
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Options for triangulation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,35,136,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,121,136,50,14
+    LTEXT           "Minimal angle in generated triangles, in degrees",
+                    IDC_STATIC,20,15,153,8
+    EDITTEXT        IDC_MIN_ANGLE,20,29,40,14,ES_AUTOHSCROLL
+    LTEXT           "Maximal square size of triangle",IDC_STATIC,20,49,99,8
+    EDITTEXT        IDC_MAX_SQUARE,20,66,40,14,ES_AUTOHSCROLL
+    LTEXT           "Number of nodes per triangle",IDC_STATIC,20,90,94,8
+    COMBOBOX        IDC_COMBO_NODES_COUNT,20,105,82,45,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NODE_PROPERTIES DIALOGEX 0, 0, 141, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Node properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "X and Y coordinates of node:",IDC_STATIC,23,6,94,8
+    EDITTEXT        IDC_NODE_X_COORD,25,18,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NODE_Y_COORD,76,18,40,14,ES_AUTOHSCROLL
+    LTEXT           "Boundary marker type:",IDC_STATIC,33,41,75,8
+    COMBOBOX        IDC_COMBO_BOUNDARY_TYPE,45,55,50,46,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Apply",IDC_APPLY_BUTTON,45,186,50,14
+    CONTROL         "Remove objects with this node",IDC_REMOVE_NODE_FROM_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,80,114,10
+    CONTROL         "Node lies on a symmetry line",
+                    IDC_CHECK_SYMMETRY_CONDITION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,101,107,10
+    EDITTEXT        IDC_EDIT_Z1,18,167,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z2,82,167,40,14,ES_AUTOHSCROLL
+    LTEXT           "Stresses, S1 and S2:",
+                    IDC_STATIC_BOUNDARY_CONDITION_TEXT,19,151,106,8
+    CONTROL         "Prescribe X",IDC_USE1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,133,51,10
+    CONTROL         "Prescribe Y",IDC_USE2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,75,132,51,10
+END
+
+IDD_DEFAULT_BOUNDARY_OPTIONS DIALOGEX 0, 0, 186, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Default boundary conditions"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,106,66,50,14
+    LTEXT           "Select default displacements, u1 and u2",
+                    IDC_STATIC_BOUNDARY_TYPE,28,7,128,8
+    EDITTEXT        IDC_EDIT_Z1_,38,19,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Z2_,107,19,40,14,ES_AUTOHSCROLL
+    CONTROL         "Prescribe X",IDC_PRESCX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,37,39,51,10
+    CONTROL         "Prescribe Y",IDC_PRESCY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,39,51,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904e3"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Geometry2d.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Geometry2d.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1251
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PROPERTIES_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TRIANGULATE_OPTIONS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        VERTGUIDE, 20
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_NODE_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 134
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 200
+        HORZGUIDE, 32
+        HORZGUIDE, 151
+    END
+
+    IDD_DEFAULT_BOUNDARY_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+        HORZGUIDE, 33
+        HORZGUIDE, 49
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Geometry2d"
+    IDR_Geometry2dTYPE      "\nGeometry2d\nGeometry2d\n\n\nGeometry2d.Document\nGeometry2d.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Geometry2d"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON_NODE          "Add node"
+    ID_BUTTON_SEGMENT       "Add segment"
+    ID_BUTTON_MARKER1       "Add boundary marker inner"
+    ID_BUTTON_MARKER2       "Add boundary marker outer"
+    ID_BUTTON_HOLE          "Add hole"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATORXY          "..."
+    ID_BUTTON_PROPERTIES    "Properties for specified geometry view"
+    ID_BUTTON_TRIANGULATE   "Triangulate current geometry"
+    ID_BUTTON_NODE_OPTIONS  "Properties for node"
+    ID_BUTTON_NODE_CHECK    "Check the node for options"
+    ID_INDICATORMODE        "None"
+    ID_BUTTON_BOUNDARY_LINE "Select 2 nodes for symmetry condition"
+    ID_BUTTON_BOUNDARY_CURVE "Select nodes for boundary condition"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON_LINE_PRIMITIVE "Line primitive"
+    ID_BUTTON_CURVE_PRIMITIVE "Curve primitive"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\Geometry2d.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
